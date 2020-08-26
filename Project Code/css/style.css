@@ -2,3 +2,24 @@
   font-family: Trajan;
   src: url(fonts/Trajan.woff);
 }
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto.ttf);
+}
+/*
+Tittle Font : Trajan
+Subtittle Font : Trajan
+Body Font : Roboto
+Buttons Font : Calibari
+Primary Color: #ececec
+Marking Color: #00E676 #04FF2E
+Sub Color: #04FF2E
+Focus Color: #006600
+*/
+
+.green_bg{
+    background-color: #00E676;
+    color: #fff;
+    font-family : Roboto;
+    
+}
