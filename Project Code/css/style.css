@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Trajan;
-  src: url(fonts/Trajan.woff);
+  font-family: Trajan ;
+  src: url(../fonts/Trajan.ttf);
 }
 @font-face {
   font-family: Roboto;
@@ -16,15 +16,42 @@ Marking Color: #00E676 #04FF2E
 Sub Color: #04FF2E
 Focus Color: #006600
 */
+body{
+    background-color:#e9ecef;
+}
+.btn{
 
+    color:white;
+    font-weight: 600;
+    box-shadow: 4x;
+    background-color:#00E676;
+}
+.btn:hover{
+    background-color: #04FF2E;
+}
+.trajan{
+    font-family: Trajan !important;
+}
+.title{
+    color: #00E676;
+    font-family: Trajan;
+    text-align: center;
+}
 .green_bg{
     background-color: #00E676;
     color: #fff;
     font-family : Roboto;
     
 }
+.carousel-inner{
+    max-height: 450px !important;
+}
 
-
+.carousel-caption {
+    font-size: 40px;
+    z-index: 5;
+    
+}
 /*
 
 Counter Style 
