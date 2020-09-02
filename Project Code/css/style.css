@@ -212,8 +212,12 @@ anchors are inline so you need ot make them block to go full width
 
 a {
     text-decoration: none;
-    color: #0062cc;
-    border-bottom: 2px solid #0062cc;
+    
+    
+}
+a:hover{
+    text-decoration: none;
+    border: none;
 }
 
 .box {
