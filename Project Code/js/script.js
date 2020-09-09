@@ -86,3 +86,5 @@ function checkDisplay(){
       }
     });
 }
+
+//Chat bot JS
