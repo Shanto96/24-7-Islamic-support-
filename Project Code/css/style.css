@@ -20,7 +20,7 @@ Focus Color: #006600
 */
 body {
     background-color: #e9ecef;
-    width: 99%;
+    width: 100%;
 }
 
 .btn {
@@ -698,3 +698,17 @@ line-height: 22px;
     display: block;
 }
 
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.Quran-head{
+    color: #FFD700;font-size: 80px;
+    
+    
+}
