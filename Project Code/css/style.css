@@ -712,3 +712,43 @@ line-height: 22px;
     
     
 }
+.surah-card{
+    border-radius: 18px;
+    background-color: #000022;
+    color: #eec903;
+    text-align: center;
+    padding: 16px;
+    font-family: Trajan;
+    font-size: 22px;
+     display: block;
+    min-width: 80%
+    
+    
+}
+.surah-card h2{
+        border: 2px solid;
+    width: 20%;
+    /* position: relative; */
+    margin-left: 40%;
+    border-radius: 31px;
+    font-size: 12px;
+
+}
+.surah-card:hover{
+    box-shadow: 0 .5rem 1rem  #eec903 !important;
+   ;
+    
+}
+
+.surah-card h3{
+    color: white;
+    font-size: 14px;
+}
+.blue-bg{
+        background-color: #000022;
+
+    
+}
+.Quran_page{
+    background:  -webkit-linear-gradient(top, #000022, #00e676)
+}
