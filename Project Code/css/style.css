@@ -760,6 +760,10 @@ line-height: 22px;
 .hadith_page {
     background: -webkit-linear-gradient(top, #001103, #00e676);
 }
+.hadith-card{
+      background: -webkit-linear-gradient(top,#00e676,#001103);
+    
+}
 .hadith-card h2{
         border: 2px solid;
     width: 5%;
