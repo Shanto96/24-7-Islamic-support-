@@ -746,9 +746,26 @@ line-height: 22px;
 }
 .blue-bg{
         background-color: #000022;
+    color: #eec903;
 
+    
+}
+.blue-bg button{
+    background-color: #eec903;
     
 }
 .Quran_page{
     background:  -webkit-linear-gradient(top, #000022, #00e676)
+}
+.hadith_page {
+    background: -webkit-linear-gradient(top, #001103, #00e676);
+}
+.hadith-card h2{
+        border: 2px solid;
+    width: 5%;
+    /* position: relative; */
+    margin-left: 47%;
+    border-radius: 31px;
+    font-size: 12px;
+
 }
