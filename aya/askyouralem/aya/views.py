@@ -7,3 +7,4 @@ from .models import *
 def login(request):
     context = {}
     return render(request,'aya/login.html')
+#fgljgfld;skjgdslfjgsldfjg sl;gkjmsdflmggdlf;mbgdlfmldskgjsd;lfg
