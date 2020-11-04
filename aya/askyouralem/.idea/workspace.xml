@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d0fd71a-9f00-4704-89a4-3f5c77f891db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/aya/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/askyouralem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/askyouralem/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aya/templates/aya/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/aya/templates/aya/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aya/templates/aya/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/aya/templates/aya/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aya/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/aya/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aya/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/aya/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1jmMWNvSfrHDBYAiGnUkiOz4ZDY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d0fd71a-9f00-4704-89a4-3f5c77f891db" name="Default Changelist" comment="" />
+      <created>1604404845161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604404845161</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1745" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1604497652296">
+      <screen x="1366" y="1" width="1366" height="768" />
+    </state>
+    <state x="1745" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.1.1366.768@1366.1.1366.768" timestamp="1604497652296" />
+    <state x="1858" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604405279425">
+      <screen x="1366" y="1" width="1366" height="768" />
+    </state>
+    <state x="1858" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.1.1366.768@1366.1.1366.768" timestamp="1604405279425" />
+    <state x="21" y="0" width="1361" height="752" key="dock-window-1" timestamp="1604426906608">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="21" y="0" width="1361" height="752" key="dock-window-1/0.0.1366.768/1366.1.1366.768@1366.1.1366.768" timestamp="1604426906608" />
+  </component>
+</project>
