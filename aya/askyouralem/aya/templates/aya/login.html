@@ -26,12 +26,13 @@
 		<a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
 	</p>
 	<hr>
-	<form>
+	<form action="" method="POST">
+        {% csrf_token %}
     <div class="form-group">
-        <input name="" class="form-control" placeholder="Email or login" type="email">
+        <input name="username" class="form-control" placeholder="Email or login" type="text">
     </div> <!-- form-group// -->
     <div class="form-group">
-        <input class="form-control" placeholder="******" type="password">
+        <input name="password" class="form-control" placeholder="******" type="password">
     </div> <!-- form-group// -->
     <div class="row">
         <div class="col-md-6">
@@ -41,6 +42,11 @@
         </div>
         <div class="col-md-6 text-right">
             <a class="small" href="#">Forgot password?</a>
+        </div>
+        <div class="col-md-6 text-right">
+           {% for message in messages %}
+            {{message}}
+           {% endfor %}
         </div>
     </div> <!-- .row// -->
 </form>
