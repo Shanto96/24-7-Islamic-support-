@@ -47,3 +47,6 @@ def nav(request):
 def quran(request):
     context = {}
     return render(request,'aya/Quran.html')
+def index(request):
+    context ={}
+    return render(request,'aya/index.html')
