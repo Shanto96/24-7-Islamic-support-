@@ -43,3 +43,7 @@ def home(request):
 
 def nav(request):
     return render(request,'aya/navbar.html')
+
+def quran(request):
+    context = {}
+    return render(request,'aya/Quran.html')
