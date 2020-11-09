@@ -40,3 +40,6 @@ def registration(request):
 def home(request):
     context = {}
     return render(request,'aya/home.html')
+
+def nav(request):
+    return render(request,'aya/navbar.html')
