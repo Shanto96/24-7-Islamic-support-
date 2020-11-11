@@ -22,7 +22,9 @@ def loginpage(request):
 
     context = {}
     return render(request,'aya/login.html')
-
+def logoutUser(request):
+    logout(request)
+    return redirect('login')
 def registration(request):
 
     form = CreateUserForm()
@@ -39,7 +41,7 @@ def registration(request):
     return render(request,'aya/register.html',context)
 def home(request):
     context = {}
-    return render(request,'aya/home.html')
+    return render(request,'aya/index.html')
 
 def nav(request):
     return render(request,'aya/navbar.html')
@@ -49,4 +51,7 @@ def quran(request):
     return render(request,'aya/Quran.html')
 def index(request):
     context ={}
-    return render(request,'aya/index.html')
+    return render(request,'aya/home.html')
+def question(request):
+    context = {}
+    return render(request,'aya/question.html')
