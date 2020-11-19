@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from .models import *
-from .forms import CreateUserForm
+from .forms import CreateUserForm,QuestionForm
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
 # Create your views here.
@@ -53,5 +53,13 @@ def index(request):
     context ={}
     return render(request,'aya/home.html')
 def question(request):
-    context = {}
-    return render(request,'aya/question.html')
+    form = QuestionForm()
+    if request.method == 'POST':
+        form = QuestionForm(request.POST)
+        if form.is_valid():
+            fs = form.save(commit=False)
+            fs.user = request.user
+            fs.save()
+            return redirect('/')
+    context = {'form':form}
+    return render(request,'aya/question.html',context)

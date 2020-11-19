@@ -38,25 +38,30 @@
                     </div>
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                         <h2 class="title mt-5"> Ask A Public Question</h2>
-                        <form action="">
+                        <form action="" method="POST">
+                            {% csrf_token %}
+
+
                            <h5 class="title left">Title</h5>
                             <div class="form-group">
-        <input name="" class="form-control" placeholder="Enter the tittle of your Question" type="text">
+<!--        <input name="" class="form-control" placeholder="Enter the tittle of your Question" type="text">-->
+                                {{ form.title }}
     </div>
                            <h5 class="title left">Description</h5>
                             <div class="form-group">
-         <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Describe Your Problem Here" rows="5"></textarea>
+                                {{ form.body }}
+<!--         <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Describe Your Problem Here" rows="5"></textarea>-->
     </div>
                            <div class="form-group">
                                <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Select Catagory
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
+<!--  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--    Select Catagory-->
+<!--  </button>-->
+<!--  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+<!--    <a class="dropdown-item" href="#">Action</a>-->
+<!--    <a class="dropdown-item" href="#">Another action</a>-->
+<!--    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--  </div>-->{{form.topic}}</div>
   <button class="btn right">Ask Anonymously</button>
 </div>
                           <div class="card" >
