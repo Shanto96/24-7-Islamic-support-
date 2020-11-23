@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aya',
     'phonenumber_field',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,4 @@ MEDIA_URL = '/img/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
+AUTH_USER_MODEL = 'accounts.User'
