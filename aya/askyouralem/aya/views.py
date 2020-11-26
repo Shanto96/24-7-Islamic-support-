@@ -16,7 +16,12 @@ def loginpage(request):
 
         if user is not None:
             login(request,user)
-            return redirect('home')
+            if request.user.groups.exists():
+                group = request.user.groups.all()[0].name
+                if group == 'Alem':
+                    return redirect('index')
+            else:
+             return redirect('home')
         else:
             messages.info(request,'Username or password did not mathced')
 
@@ -40,8 +45,9 @@ def registration(request):
     context = {'form':form}
     return render(request,'aya/register.html',context)
 def home(request):
-    context = {}
-    return render(request,'aya/index.html')
+    questions = Question.objects.all()
+    context = {'questions':questions}
+    return render(request,'aya/index.html',context)
 
 def nav(request):
     return render(request,'aya/navbar.html')

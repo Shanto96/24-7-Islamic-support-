@@ -14,7 +14,7 @@ Subtittle Font : Trajan
 Body Font : Roboto
 Buttons Font : Calibari
 Primary Color: #ececec
-Marking Color: #00E676 #04FF2E
+Marking Color: #056a75 #04FF2E
 Sub Color: #04FF2E
 Focus Color: #006600
 */
@@ -32,7 +32,7 @@ body {
 }
 
 .btn:hover {
-    background: -webkit-linear-gradient(left, #00c6ff, #00E676);
+    background: -webkit-linear-gradient(left, #00c6ff, #056a75);
 }
 
 .trajan {
@@ -40,14 +40,14 @@ body {
 }
 
 .title {
-    color: #00E676;
+    color: #056a75;
     font-family: Trajan;
     text-align: center;
     font-weight: bold;
 }
 
 .green_bg {
-    background-color: #00E676;
+    background-color: #056a75;
     color: #fff;
     font-family: Roboto;
 
@@ -72,7 +72,7 @@ body {
 /*Register Page CSS*/
 /*************************************************************************************/
 .register {
-    background: -webkit-linear-gradient(left, #00E676, #00c6ff);
+    background: -webkit-linear-gradient(left, #056a75, #00c6ff);
     margin-top: 0%;
     padding: 3%;
 }
@@ -147,7 +147,7 @@ body {
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
-    background: -webkit-linear-gradient(left, #00E676, #00c6ff);
+    background: -webkit-linear-gradient(left, #056a75, #00c6ff);
     color: #fff;
     font-weight: 600;
     width: 50%;
@@ -188,7 +188,7 @@ body {
     text-align: center;
     margin-top: 8%;
     margin-bottom: -15%;
-    color: #00E676;
+    color: #056a75;
      
 }
 
@@ -755,13 +755,13 @@ line-height: 22px;
     
 }
 .Quran_page{
-    background:  -webkit-linear-gradient(top, #000022, #00e676)
+    background:  -webkit-linear-gradient(top, #000022, #056a75)
 }
 .hadith_page {
-    background: -webkit-linear-gradient(top, #001103, #00e676);
+    background: -webkit-linear-gradient(top, #001103, #056a75);
 }
 .hadith-card{
-      background: -webkit-linear-gradient(top,#00e676,#001103);
+      background: -webkit-linear-gradient(top,#056a75,#001103);
     
 }
 .hadith-card h2{

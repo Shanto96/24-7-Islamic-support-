@@ -15,35 +15,37 @@
             <h1 class="title shadow">Recently Asked Question</h1>
 
             <div class="qa-message-list" id="wallmessages">
+
+                {% for question in questions %}
                 <div class="message-item" id="m16">
                     <div class="message-inner">
                         <div class="message-head clearfix">
                             <div class="avatar pull-left"><a href="./index.php?qa=user&qa_1=Oleg+Kolesnichenko"><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a></div>
                             <div class="user-detail">
-                                <h5 class="handle">Oleg Kolesnichenko</h5>
+                                <h5 class="handle">{{question.title}}</h5>
                                 <div class="post-meta">
                                     <div class="asker-meta">
                                         <span class="qa-message-what"></span>
                                         <span class="qa-message-when">
-                                            <span class="qa-message-when-data">Jan 21</span>
+                                            <span class="qa-message-when-data">{{question.date}}</span>
                                         </span>
                                         <span class="qa-message-who">
                                             <span class="qa-message-who-pad">by </span>
-                                            <span class="qa-message-who-data"><a href="./index.php?qa=user&qa_1=Oleg+Kolesnichenko">Oleg Kolesnichenko</a></span>
+                                            <span class="qa-message-who-data"><a href="./index.php?qa=user&qa_1=Oleg+Kolesnichenko">{{question.User}}</a></span>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="qa-message-content">
-                            Yo!
+                            {{ question.body}}
                         </div>
                         <div class="msgreply">
                                 <span>Hello there</span>
                         </div>
                     </div>
                 </div>
-
+                {% endfor %}
                 <div class="message-item" id="m9">
                     <div class="message-inner">
                         <div class="message-head clearfix">
@@ -175,83 +177,10 @@
                     </div>
                 </div>
 
-                <div class="message-item" id="m3">
-                    <div class="message-inner">
-                        <div class="message-head clearfix">
-                            <div class="avatar pull-left"><a href="./index.php?qa=user&qa_1=monu"><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a></div>
-                            <div class="user-detail">
-                                <h5 class="handle">monu</h5>
-                                <div class="post-meta">
-                                    <div class="asker-meta">
-                                        <span class="qa-message-what"></span>
-                                        <span class="qa-message-when">
-                                            <span class="qa-message-when-data">Oct 24, 2013</span>
-                                        </span>
-                                        <span class="qa-message-who">
-                                            <span class="qa-message-who-pad">by </span>
-                                            <span class="qa-message-who-data"><a href="./index.php?qa=user&qa_1=monu">monu</a></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qa-message-content">
-                            Suspendisse varius mi consectetur nulla volutpat, nec fermentum turpis vehicula. Curabitur dapibus odio mauris, vitae accumsan sapien auctor non. Duis tempus ante id nulla vestibulum mattis.
-                        </div>
-                    </div>
-                </div>
 
-                <div class="message-item" id="m2">
-                    <div class="message-inner">
-                        <div class="message-head clearfix">
-                            <div class="avatar pull-left"><a href="./index.php?qa=user&qa_1=Fynn"><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a></div>
-                            <div class="user-detail">
-                                <h5 class="handle">Fynn</h5>
-                                <div class="post-meta">
-                                    <div class="asker-meta">
-                                        <span class="qa-message-what"></span>
-                                        <span class="qa-message-when">
-                                            <span class="qa-message-when-data">Oct 24, 2013</span>
-                                        </span>
-                                        <span class="qa-message-who">
-                                            <span class="qa-message-who-pad">by </span>
-                                            <span class="qa-message-who-data"><a href="./index.php?qa=user&qa_1=Fynn">Fynn</a></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qa-message-content">
-                            Nunc ante neque, feugiat at dictum ut, dignissim sed sapien. Pellentesque congue eu nisl sit amet cursus. Integer dapibus adipiscing metus ac vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
-                    </div>
-                </div>
 
-                <div class="message-item" id="m1">
-                    <div class="message-inner">
-                        <div class="message-head clearfix">
-                            <div class="avatar pull-left"><a href="./index.php?qa=user&qa_1=admin"><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a></div>
-                            <div class="user-detail">
-                                <h5 class="handle">admin</h5>
-                                <div class="post-meta">
-                                    <div class="asker-meta">
-                                        <span class="qa-message-what"></span>
-                                        <span class="qa-message-when">
-                                            <span class="qa-message-when-data">Oct 24, 2013</span>
-                                        </span>
-                                        <span class="qa-message-who">
-                                            <span class="qa-message-who-pad">by </span>
-                                            <span class="qa-message-who-data"><a href="./index.php?qa=user&qa_1=admin">admin</a></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qa-message-content">
-                            Nunc ante neque, feugiat at dictum ut, dignissim sed sapien. Pellentesque congue eu nisl sit amet cursus. Integer dapibus adipiscing metus ac vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum iaculis mi, non dapibus nulla eleifend sed. Etiam ac commodo leo. Donec non sem id tellus mattis convallis. Morbi dapibus nulla ac dui lacinia,
-                        </div>
-                    </div>
-                </div>
+
+
 
             </div>
 
