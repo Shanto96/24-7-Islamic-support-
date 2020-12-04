@@ -1,10 +1,10 @@
+
 {%  extends 'aya/head.html' %}
+{% load static %}
 {% block content %}
 {% include 'aya/navbar.html'   %}
-   
-   
-   
-   
+
+
    <!--
     ####################################################
     C A R O U S E L
@@ -27,8 +27,8 @@
                     What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
                      -->
                     <picture>
-                        <source srcset="img/cp1.jpg" media="(min-width: 1400px)">
-                        <source srcset="img/cp1.jpg" media="(min-width: 769px)">
+                        <source srcset="static/img/cp1.jpg" media="(min-width: 1400px)">
+                        <source srcset="static/img/cp1.jpg" media="(min-width: 769px)">
                         <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
                         <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
                     </picture>
@@ -40,7 +40,6 @@
                             <h5> Prophet Mohammad (Sm.) [Muslim]</h5>
 
 
-                            <span class="btn btn-sm btn-outline-secondary">Learn More</span>
                         </div>
                     </div>
                 </a>
@@ -49,8 +48,8 @@
             <div class="carousel-item">
                 <a href="https://bootstrapcreative.com/">
                     <picture>
-                        <source srcset="img/cp3.jpg" media="(min-width: 1400px)">
-                        <source srcset="img/cp3.jpg" media="(min-width: 769px)">
+                        <source srcset="static/img/cp3.jpg" media="(min-width: 1400px)">
+                        <source srcset="static/img/cp3.jpg" media="(min-width: 769px)">
                         <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
                         <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
                     </picture>
@@ -60,7 +59,7 @@
                             <h2></h2>
                             <p class="trajan">Knowledge Doesn't Come You Have To Go For It</p>
                             <h5>Emam Malik (Rh.)</h5>
-                            <span class="btn btn-sm btn-outline-secondary">Our Process</span>
+
                         </div>
                     </div>
                 </a>
@@ -69,8 +68,8 @@
             <div class="carousel-item">
                 <a href="https://bootstrapcreative.com/">
                     <picture>
-                        <source srcset="img/cp4.jpg" media="(min-width: 1400px)">
-                        <source srcset="img/cp4.jpg" media="(min-width: 769px)">
+                        <source srcset="static/img/cp4.jpg" media="(min-width: 1400px)">
+                        <source srcset="static/img/cp4.jpg" media="(min-width: 769px)">
                         <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
                         <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
                     </picture>
@@ -81,7 +80,6 @@
                             <p class="trajan">The seeking of knowledge is obligitory for every Muslim</p>
                             <h5>Al-Tirmidhi #74</h5>
 
-                            <span class="btn btn-sm btn-secondary">Learn How</span>
                         </div>
                     </div>
                 </a>
@@ -110,7 +108,9 @@
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="container">
                 <h1 class="trajan center title">Get Connected with Alem</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis praesentium odit nihil, a iure voluptatibus quisquam at eligendi, consectetur, debitis facilis sint provident? Nihil quasi culpa, excepturi ex eos nesciunt non eum, ab officia dignissimos iste, quaerat. Voluptates, nesciunt, incidunt!
+                    <br/>
+                <p class="trajan" style="font-size:20px">
+                   Assalamu Alikum, Welcome to our platform . This website is one stop solution for your all kind of Islamic Questions. You'll find the ayah of Quran and Hadith in here too.
                 </p>
 
                 </div>
@@ -136,10 +136,10 @@
 
                     <div class="box-part text-center shadow">
 
-                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <img src="static/img/question-mark.png" alt="">
 
-                        <div class="title trajan">
-                            <h4>Instagram</h4>
+                        <div  class="title trajan">
+                            <h2 class="trajan">Question and Answer platform</h2>
                         </div>
 
                         <div class="text">
@@ -155,10 +155,9 @@
 
                     <div class="box-part text-center  shadow">
 
-                        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-
+                        <img src="static/img/24h.png" alt="">
                         <div class="title trajan">
-                            <h4>Twitter</h4>
+                            <h2 class="trajan"> 24 hours support By Alems</h2>
                         </div>
 
                         <div class="text">
@@ -174,10 +173,9 @@
 
                     <div class="box-part text-center shadow">
 
-                        <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-
+                        <img src="static/img/quran.png" alt="">
                         <div class="title trajan">
-                            <h4>Facebook</h4>
+                            <h2 class="trajan">Surah and Hadith in 3 Language</h2>
                         </div>
 
                         <div class="text">
@@ -195,120 +193,147 @@
     </div>
 <!--  Feature Box End-->
   
-<!--     Counter Box-->
-<div class="jumbotron">
-<div class="row w-100">
-        <div class="col-md-3">
-            <div class="card border-info mx-sm-1 p-3">
-                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-car" aria-hidden="true"></span></div>
-                <div class="text-info text-center mt-3"><h4>Alems</h4></div>
-                <div class="text-info text-center mt-2"><h1><span class="count4" data-from=" 0 " data-to="5210" data-time="300"></span></h1></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-success mx-sm-1 p-3">
-                <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-eye" aria-hidden="true"></span></div>
-                <div class="text-success text-center mt-3"><h4>Users</h4></div>
-                <div class="text-success text-center mt-2"><h1><span class="count4" data-from=" 0 " data-to="5210" data-time="300"></span></h1></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-danger mx-sm-1 p-3">
-                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-heart" aria-hidden="true"></span></div>
-                <div class="text-danger text-center mt-3"><h4>Active Now</h4></div>
-                <div class="text-danger text-center mt-2"><h1><span class="count4" data-from=" 0 " data-to="5210" data-time="300"></span></h1></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-warning mx-sm-1 p-3">
-                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span></div>
-                <div class="text-warning text-center mt-3"><h4>Question Asked</h4></div>
-                <div class="text-warning text-center mt-2"><h1><span class="count4" data-from=" 0 " data-to="5210" data-time="300"></span></h1></div>
-            </div>
-        </div>
-     </div>
-</div>
-<!--     Counter Box End-->
+<!--Counter Box Start-->
 
-<!-- Two Buttons with description-->
-
-
-<div class="row" style="margin-bottom:23px;">
- <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-
-</div>
-
-  <div class="col-sm-5">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title title">Ask Your Question</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Ask a Question</a>
-      </div>
+	</div>
+		<div class="row text-center">
+	        <div class="col">
+	        <div class="counter">
+      <i class="fa fa-code fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+       <p class="count-text ">Our Customer</p>
     </div>
-  </div>
-  <div class="col-sm-5">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title title">Registered as an Alem</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Sign Up Here</a>
-      </div>
+	        </div>
+              <div class="col">
+               <div class="counter">
+      <i class="fa fa-coffee fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+      <p class="count-text ">Happy Clients</p>
     </div>
-  </div>
-   <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+              </div>
+              <div class="col">
+                  <div class="counter">
+      <i class="fa fa-lightbulb-o fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+      <p class="count-text ">Project Complete</p>
+    </div></div>
+              <div class="col">
+              <div class="counter">
+      <i class="fa fa-bug fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <p class="count-text ">Coffee With Clients</p>
+    </div>
+              </div>
+         </div>
+</div>
+<!--Counter Box End-->
 
-</div>
-</div>
+
 <!-- Two Buttons with description  End-->
 
 <!--footer Section-->
 
-<footer class="section footer-classic context-dark bg-image pt-4" style="background: #2d3246;">
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-md-4 col-xl-5">
-              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="img/logo.png 2x"></a>
-                <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
-                <!-- Rights-->
-                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <h5>Contacts</h5>
-              <dl class="contact-list">
-                <dt>Address:</dt>
-                <dd>798 South Park Avenue, Jaipur, Raj</dd>
-              </dl>
-              <dl class="contact-list">
-                <dt>email:</dt>
-                <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
-              </dl>
-              <dl class="contact-list">
-                <dt>phones:</dt>
-                <dd><a href="tel:#">https://karosearch.com</a> <span>or</span> <a href="tel:#">https://karosearch.com</a>
-                </dd>
-              </dl>
-            </div>
-            <div class="col-md-4 col-xl-3">
-              <h5>Links</h5>
-              <ul class="nav-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row no-gutters social-container">
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
-        </div>
-      </footer>
+
+<script>
+    (function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+
+			$self.data('countTo', data);
+
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+			// initialize the element with the starting value
+			render(value);
+
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+
+				render(value);
+
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+
+  // start all the timers
+  $('.timer').each(count);
+
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+</script>
 <!--footer Section Emd-->
     {% endblock%}
     

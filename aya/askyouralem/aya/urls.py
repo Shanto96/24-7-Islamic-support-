@@ -10,5 +10,6 @@ urlpatterns = [
     path('nav/',views.nav,name="nav"),
     path('quran/',views.quran,name="quran"),
     path('',views.index,name="index"),
-    path('question',views.question,name="question"),
+    path('question/',views.question,name="question"),
+    path('test/',views.test,name="test"),
 ]

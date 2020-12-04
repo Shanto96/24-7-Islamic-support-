@@ -69,3 +69,5 @@ def question(request):
             return redirect('/')
     context = {'form':form}
     return render(request,'aya/question.html',context)
+def test(request):
+    return render(request,'aya/text.html')
